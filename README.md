@@ -1,4 +1,12 @@
-# cpp-boost-dev
-Cpp boost development environment, including all static and dynamic boost libraries, g++ and clang++, gdb and lldb, and dependencies.
+# C++ development environment.
+Includes the latest versions per distro for:
+1. Boost libraries, both static and dynamic boost libraries.
+1. g++
+1. clang++
+1. gdb
+1. lldb
 
-Right now only current Ubuntu LTS releases are supported, more distros and versions will be added over time.
+Supported distros:
+1. Ubuntu 16.04
+1. Ubuntu 18.04
+1. Debian 8
