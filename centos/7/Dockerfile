@@ -26,6 +26,12 @@ RUN yum install -y centos-release-scl && \
         glibc-devel \
         glibc-static \
         lldb && \
+    mkdir -p /tmp/cmake && \
+    cd /tmp/cmake && \
+    curl -O https://cmake.org/files/v3.12/cmake-3.12.3-Linux-x86_64.sh && \
+    sh cmake-3.12.3-Linux-x86_64.sh --prefix=/usr/local --exclude-subdir && \
+    cd / && \
+    rm -rf /tmp/cmake && \
     yum clean all -y
 
 RUN groupadd -g 1001 appuser && useradd -r -u 1001 -g appuser appuser
@@ -33,3 +39,4 @@ USER appuser
 
 ADD entrypoint.sh /
 ENTRYPOINT [ "/entrypoint.sh" ]
+CMD [ "bash" ]
