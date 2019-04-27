@@ -7,6 +7,7 @@ RUN apt-get update && \
         ca-certificates \
         clang-4.0 \
         gdb \
+        g++ \
         libboost-all-dev \
         lldb \
         make \
