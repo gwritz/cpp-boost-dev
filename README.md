@@ -11,5 +11,7 @@ Includes recent versions per distro for:
 Supported distros:
 1. Ubuntu 16.04
 1. Ubuntu 18.04
+1. Ubuntu 19.04
 1. Debian 8
+1. Debian 9
 1. Centos 7
